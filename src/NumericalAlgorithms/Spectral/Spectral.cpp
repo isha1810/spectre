@@ -32,6 +32,9 @@ std::ostream& operator<<(std::ostream& os, const Basis& basis) noexcept {
       return os << "Chebyshev";
     case Basis::FiniteDifference:
       return os << "FiniteDifference";
+      //********added sphericalharmonic
+    case Basis::SphericalHarmonic:
+      return os << "SphericalHarmonic";
     default:
       ERROR("Invalid basis");
   }
@@ -677,6 +680,8 @@ Spectral::Basis Options::create_from_yaml<Spectral::Basis>::create<void>(
     return Spectral::Basis::Legendre;
   } else if ("FiniteDifference" == type_read) {
     return Spectral::Basis::FiniteDifference;
+  } else if ("SphericalHarmonic" == type_read) {
+    return Spectral::Basis::SphericalHarmonic;
   }
   PARSE_ERROR(options.context(),
               "Failed to convert \""
