@@ -16,10 +16,8 @@
 #include "Utilities/Requires.hpp"
 #include "Utilities/TypeTraits.hpp"  // IWYU pragma: keep
 #include "Utilities/TypeTraits/IsInteger.hpp"
-
 #include "Utilities/ErrorHandling/Assert.hpp"
 
-#include "Utilities/TmplDebugging.hpp"
 /// \cond
 namespace PUP {
 class er;

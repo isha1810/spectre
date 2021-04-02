@@ -32,7 +32,6 @@ std::ostream& operator<<(std::ostream& os, const Basis& basis) noexcept {
       return os << "Chebyshev";
     case Basis::FiniteDifference:
       return os << "FiniteDifference";
-      //********added sphericalharmonic
     case Basis::SphericalHarmonic:
       return os << "SphericalHarmonic";
     default:

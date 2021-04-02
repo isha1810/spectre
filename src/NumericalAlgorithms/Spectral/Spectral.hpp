@@ -67,8 +67,8 @@ namespace Spectral {
  * discontinuous solutions, hence none of those are defined for the
  * `FiniteDifference` basis.
  */
-  enum class Basis { Chebyshev, Legendre, FiniteDifference, SphericalHarmonic };
-  //*********** added SphericalHarmonic here
+<<<<<<< 1ddcaf6d87100f8ef96fb75f15b122736f064a43
+enum class Basis { Chebyshev, Legendre, FiniteDifference, SphericalHarmonic };
 
 /// \cond HIDDEN_SYMBOLS
 std::ostream& operator<<(std::ostream& os, const Basis& basis) noexcept;
